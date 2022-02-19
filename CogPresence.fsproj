@@ -2,8 +2,16 @@
   <PropertyGroup>
     <OutputType>Exe</OutputType>
     <TargetFramework>net6.0</TargetFramework>
+    <ProjectGuid>{6e959d40-3886-40b9-a833-1a6d99003711}</ProjectGuid>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <StartArguments>"C:\Program Files (x86)\Steam\steamapps\common\Cogmind\dumps"</StartArguments>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="Program.fs" />
+    <PackageReference Include="DiscordRichPresence" Version="1.0.175" />
+    <PackageReference Include="FSharp.Data" Version="4.2.7" />
   </ItemGroup>
 </Project>
